@@ -21,25 +21,25 @@
         [obj swizzleMethod:@selector(insertObject:atIndex:) withMethod:@selector(safeInsertObject:atIndex:)];
         [obj swizzleMethod:@selector(removeObjectAtIndex:) withMethod:@selector(safeRemoveObjectAtIndex:)];
         [obj swizzleMethod:@selector(replaceObjectAtIndex:withObject:) withMethod:@selector(safeReplaceObjectAtIndex:withObject:)];
-
     });
 }
 
 - (void)safeAddObject:(id)anObject
 {
     if (anObject) {
-        [self addObject:anObject];
+        [self safeAddObject:anObject];
     }else{
         NSLog(@"obj is nil");
+        
     }
 }
 
 - (id)safeObjectAtIndex:(NSInteger)index
 {
     if(index<[self count]){
-        return [self objectAtIndex:index];
+        return [self safeObjectAtIndex:index];
     }else{
-        NSLog(@"index is cout of count");
+        NSLog(@"index is beyond bounds ");
     }
     return nil;
 }
@@ -47,27 +47,27 @@
 - (void)safeInsertObject:(id)anObject atIndex:(NSUInteger)index
 {
     if (anObject && index <= [self count]) {
-        [self addObject:anObject];
+        [self safeInsertObject:anObject atIndex:index];
     }else{
-        NSLog(@"obj is nil or index is out of cout");
+        NSLog(@"obj is nil or index is beyond bounds ");
     }
 }
 
 - (void)safeRemoveObjectAtIndex:(NSUInteger)index
 {
     if (index < [self count]) {
-        [self removeObjectAtIndex:index];
+        [self safeRemoveObjectAtIndex:index];
     }else{
-        NSLog(@"index is cout of count");
+        NSLog(@"index is beyond bounds ");
     }
 }
 
 - (void)safeReplaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject
 {
     if (anObject && index <= [self count]) {
-        [self replaceObjectAtIndex:index withObject:anObject];
+        [self safeReplaceObjectAtIndex:index withObject:anObject];
     }else{
-        NSLog(@"index is cout of count");
+        NSLog(@"index is beyond bounds ");
     }
 }
 @end

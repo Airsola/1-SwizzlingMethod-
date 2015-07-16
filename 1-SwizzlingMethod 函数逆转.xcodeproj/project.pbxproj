@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		895785991B57B1AF004AD6F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 895785981B57B1AF004AD6F1 /* main.m */; };
 		8957859C1B57B1AF004AD6F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8957859B1B57B1AF004AD6F1 /* AppDelegate.m */; };
-		8957859F1B57B1AF004AD6F1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8957859E1B57B1AF004AD6F1 /* MasterViewController.m */; };
-		895785A21B57B1AF004AD6F1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895785A11B57B1AF004AD6F1 /* DetailViewController.m */; };
 		895785A51B57B1AF004AD6F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895785A31B57B1AF004AD6F1 /* Main.storyboard */; };
 		895785A71B57B1AF004AD6F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895785A61B57B1AF004AD6F1 /* Images.xcassets */; };
 		895785AA1B57B1AF004AD6F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895785A81B57B1AF004AD6F1 /* LaunchScreen.xib */; };
 		895785B61B57B1AF004AD6F1 /* __SwizzlingMethod_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 895785B51B57B1AF004AD6F1 /* __SwizzlingMethod_____Tests.m */; };
 		895785C11B57B256004AD6F1 /* NSMutableSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 895785C01B57B256004AD6F1 /* NSMutableSafeArray.m */; };
 		895785C41B57B3BC004AD6F1 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 895785C31B57B3BC004AD6F1 /* NSObject+Swizzling.m */; };
+		B06A5EE11B57E7FC003846E0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A5EE01B57E7FC003846E0 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +34,6 @@
 		895785981B57B1AF004AD6F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8957859A1B57B1AF004AD6F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8957859B1B57B1AF004AD6F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8957859D1B57B1AF004AD6F1 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		8957859E1B57B1AF004AD6F1 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		895785A01B57B1AF004AD6F1 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		895785A11B57B1AF004AD6F1 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		895785A41B57B1AF004AD6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		895785A61B57B1AF004AD6F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		895785A91B57B1AF004AD6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -49,7 +44,8 @@
 		895785C01B57B256004AD6F1 /* NSMutableSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableSafeArray.m; sourceTree = "<group>"; };
 		895785C21B57B3BC004AD6F1 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
 		895785C31B57B3BC004AD6F1 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
-		895785C61B57B872004AD6F1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B06A5EDF1B57E7FC003846E0 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B06A5EE01B57E7FC003846E0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +89,8 @@
 			children = (
 				8957859A1B57B1AF004AD6F1 /* AppDelegate.h */,
 				8957859B1B57B1AF004AD6F1 /* AppDelegate.m */,
-				8957859D1B57B1AF004AD6F1 /* MasterViewController.h */,
-				8957859E1B57B1AF004AD6F1 /* MasterViewController.m */,
-				895785A01B57B1AF004AD6F1 /* DetailViewController.h */,
-				895785A11B57B1AF004AD6F1 /* DetailViewController.m */,
+				B06A5EDF1B57E7FC003846E0 /* HomeViewController.h */,
+				B06A5EE01B57E7FC003846E0 /* HomeViewController.m */,
 				895785A31B57B1AF004AD6F1 /* Main.storyboard */,
 				895785A61B57B1AF004AD6F1 /* Images.xcassets */,
 				895785A81B57B1AF004AD6F1 /* LaunchScreen.xib */,
@@ -105,7 +99,6 @@
 				895785C01B57B256004AD6F1 /* NSMutableSafeArray.m */,
 				895785C21B57B3BC004AD6F1 /* NSObject+Swizzling.h */,
 				895785C31B57B3BC004AD6F1 /* NSObject+Swizzling.m */,
-				895785C61B57B872004AD6F1 /* PrefixHeader.pch */,
 			);
 			path = "1-SwizzlingMethod 函数逆转";
 			sourceTree = "<group>";
@@ -238,10 +231,9 @@
 			files = (
 				8957859C1B57B1AF004AD6F1 /* AppDelegate.m in Sources */,
 				895785C41B57B3BC004AD6F1 /* NSObject+Swizzling.m in Sources */,
-				8957859F1B57B1AF004AD6F1 /* MasterViewController.m in Sources */,
 				895785991B57B1AF004AD6F1 /* main.m in Sources */,
+				B06A5EE11B57E7FC003846E0 /* HomeViewController.m in Sources */,
 				895785C11B57B256004AD6F1 /* NSMutableSafeArray.m in Sources */,
-				895785A21B57B1AF004AD6F1 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -357,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,6 +364,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "1-SwizzlingMethod 函数逆转/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -384,6 +377,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "1-SwizzlingMethod 函数逆转/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -442,6 +436,7 @@
 				895785BB1B57B1AF004AD6F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		895785BC1B57B1AF004AD6F1 /* Build configuration list for PBXNativeTarget "1-SwizzlingMethod 函数逆转Tests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +445,7 @@
 				895785BE1B57B1AF004AD6F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

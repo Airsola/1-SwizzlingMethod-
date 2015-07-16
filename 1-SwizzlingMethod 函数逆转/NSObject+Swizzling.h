@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NSObject (swizzle)
+
 - (void)swizzleMethod:(SEL)origSelector withMethod:(SEL)newSelector;
 
 @end
