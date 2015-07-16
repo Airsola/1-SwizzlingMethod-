@@ -8,6 +8,8 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "NSMutableSafeArray.h"
+
 
 @interface MasterViewController ()
 
@@ -22,6 +24,11 @@
         self.clearsSelectionOnViewWillAppear = NO;
         self.preferredContentSize = CGSizeMake(320.0, 600.0);
     }
+    
+    NSMutableArray *array = [NSMutableArray array];
+    [array addObject:@"123"];
+    
+    NSString *str = [array objectAtIndex:2];
 }
 
 - (void)viewDidLoad {
@@ -32,6 +39,8 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,5 +101,8 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
 }
+
+
+
 
 @end
