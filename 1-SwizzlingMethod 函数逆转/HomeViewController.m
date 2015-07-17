@@ -19,4 +19,8 @@
     NSLog(@"%@",[array objectAtIndex:10]);
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
 @end

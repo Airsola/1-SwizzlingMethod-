@@ -15,6 +15,7 @@
 		895785B61B57B1AF004AD6F1 /* __SwizzlingMethod_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 895785B51B57B1AF004AD6F1 /* __SwizzlingMethod_____Tests.m */; };
 		895785C11B57B256004AD6F1 /* NSMutableSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 895785C01B57B256004AD6F1 /* NSMutableSafeArray.m */; };
 		895785C41B57B3BC004AD6F1 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 895785C31B57B3BC004AD6F1 /* NSObject+Swizzling.m */; };
+		89A161891B58EF8900BE7B2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A161881B58EF8900BE7B2A /* ViewController.m */; };
 		B06A5EE11B57E7FC003846E0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06A5EE01B57E7FC003846E0 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		895785C01B57B256004AD6F1 /* NSMutableSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableSafeArray.m; sourceTree = "<group>"; };
 		895785C21B57B3BC004AD6F1 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
 		895785C31B57B3BC004AD6F1 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		89A161871B58EF8900BE7B2A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89A161881B58EF8900BE7B2A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B06A5EDF1B57E7FC003846E0 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B06A5EE01B57E7FC003846E0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +102,8 @@
 				895785C01B57B256004AD6F1 /* NSMutableSafeArray.m */,
 				895785C21B57B3BC004AD6F1 /* NSObject+Swizzling.h */,
 				895785C31B57B3BC004AD6F1 /* NSObject+Swizzling.m */,
+				89A161871B58EF8900BE7B2A /* ViewController.h */,
+				89A161881B58EF8900BE7B2A /* ViewController.m */,
 			);
 			path = "1-SwizzlingMethod 函数逆转";
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A161891B58EF8900BE7B2A /* ViewController.m in Sources */,
 				8957859C1B57B1AF004AD6F1 /* AppDelegate.m in Sources */,
 				895785C41B57B3BC004AD6F1 /* NSObject+Swizzling.m in Sources */,
 				895785991B57B1AF004AD6F1 /* main.m in Sources */,
